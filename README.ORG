@@ -6,7 +6,6 @@
 ** compare(old: list, new: list)
    given an old and new list of majors, courses, or transcripts
    returns a json like so
-   #+BEGIN_SOURCE javascript
    {
        "same": [object1.name, object2.name... ], //the identifier for the objects the didn't change
        "diff": [
@@ -21,4 +20,3 @@
 	   ...
        ]
    }
-   #+END_SOURCE
