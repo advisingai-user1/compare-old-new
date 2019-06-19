@@ -1,0 +1,24 @@
+#+TITLE: Compare
+#+OPTIONS: \n:t
+** same(old: object, new: object)
+   given an old course, major, or transcript, and a new one
+   returns true if they are the same and false if they have a difference
+** compare(old: list, new: list)
+   given an old and new list of majors, courses, or transcripts
+   returns a json like so
+   #+BEGIN_SOURCE javascript
+   {
+       "same": [object1.name, object2.name... ], //the identifier for the objects the didn't change
+       "diff": [
+           {
+	       "old": old[1],
+	       "new": new[1]
+	   },
+	   {
+	       "old": old[2],
+	       "new": new[2]
+	   }
+	   ...
+       ]
+   }
+   #+END_SOURCE
